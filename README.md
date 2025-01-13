@@ -1,2 +1,8 @@
-# thought-flow
-ThoughtFlow is a modern blog application built with React for the frontend and Express.js for the backend. It allows users to share their thoughts seamlessly, read engaging blogs, and connect with like-minded individuals.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
