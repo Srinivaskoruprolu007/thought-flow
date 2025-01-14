@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpLeftFromCircle } from "lucide-react";
+import MainCategories from "../components/MainCategories";
 
 const HomePage = () => {
   return (
@@ -17,15 +18,20 @@ const HomePage = () => {
         {/* titles */}
         <div>
           <h1 className="text-lg font-bold text-gray-800 md:text-2xl lg:text-3xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing
+            Welcome to ThoughtFlow – Where Ideas Find Their Voice
           </h1>
           <p className="mt-6 text-base md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-            aperiam ducimus sed, dolores facilis harum quos sequi id esse culpa.
+            ThoughtFlow is your space to unleash creativity, share compelling
+            stories, and connect with a community of thinkers and writers. Dive
+            into an engaging world of blogs and let your thoughts flow
+            seamlessly into words
           </p>
         </div>
         {/* Animated button */}
-        <Link to="/write" className="relative animate-spin animatedButton">
+        <Link
+          to="/write"
+          className="hidden md:block relative animate-spin animatedButton"
+        >
           <svg
             viewBox="0 0 200 200"
             width={"200"}
@@ -51,6 +57,8 @@ const HomePage = () => {
           </button>
         </Link>
       </div>
+      {/* CATEGORIES */}
+      <MainCategories />
     </div>
   );
 };
