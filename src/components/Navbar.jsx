@@ -7,7 +7,7 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full h-16 md:h-20 flex items-center justify-between">
+    <div className="w-full h-12 md:h-16 flex items-center justify-between">
       {/* LOGO */}
       <Link to={"/"} className="flex items-center gap-4">
         <Image src="Logo.png" className="w-10 h-10" w={32} h={32} />
@@ -18,14 +18,14 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* Mobile button */}
         <div
-          className="cursor-pointer text-4xl"
+          className="cursor-pointer text-2xl"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? <X /> : <Menu />}
         </div>
         {/* Mobile menu */}
         <div
-          className={` w-full h-screen flex flex-col gap-8 font-medium text-xl items-center justify-center absolute top-16 ${
+          className={` w-full h-screen flex flex-col gap-6 font-medium text-xl items-center justify-center absolute top-16 ${
             open ? "-right-0" : "-right-[100%]"
           } transition-all ease-in-out duration-300`}
         >
@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       {/* DESKTOP MENU */}
-      <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
+      <div className="hidden md:flex items-center gap-6 xl:gap-8 font-medium">
         <Link href="#">Home</Link>
         <Link href="#">Trending</Link>
         <Link href="#">Most Popular</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
         <SignedOut>
           <Link to={"/login"}>
-            <button className="py-2 px-4 rounded-3xl bg-green-500 text-white">
+            <button className="py-1 px-2 rounded-xl bg-green-500 text-white">
               Login <LogIn className="inline" />
             </button>
           </Link>

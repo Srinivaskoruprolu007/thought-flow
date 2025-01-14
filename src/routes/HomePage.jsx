@@ -3,7 +3,7 @@ import { ArrowUpLeftFromCircle } from "lucide-react";
 
 const HomePage = () => {
   return (
-    <div className="mt-4 flex flex-col gap-4">
+    <div className="mt-2 flex flex-col gap-2">
       {/* BREADCRUMB */}
       <div className="flex gap-4">
         <Link to={"/"} className="text-gray-500 hover:text-gray-600">
@@ -16,10 +16,10 @@ const HomePage = () => {
       <div className="flex items-center justify-between">
         {/* titles */}
         <div>
-          <h1 className="text-xl font-bold text-gray-800 md:text-3xl lg:text-4xl">
+          <h1 className="text-lg font-bold text-gray-800 md:text-2xl lg:text-3xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing
           </h1>
-          <p className="mt-8 text-base md:text-xl ">
+          <p className="mt-6 text-base md:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
             aperiam ducimus sed, dolores facilis harum quos sequi id esse culpa.
           </p>
