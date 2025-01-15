@@ -10,6 +10,12 @@ const Image = ({ src, className, w, h }) => {
       className={className}
       width={w}
       height={h}
+      transformation={[
+        {
+          width: w,
+          height: h,
+        },
+      ]}
     />
   );
 };

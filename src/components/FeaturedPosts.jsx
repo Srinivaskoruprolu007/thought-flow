@@ -30,7 +30,7 @@ const FeaturedPosts = () => {
         </Link>
       </div>
       {/* others */}
-      <div className="w-full lg:w-1/2 flex flex-col gap-2">
+      <div className="w-full lg:w-1/2 flex flex-col gap-4">
         {/* 1 */}
         <div className="lg:h-1/3 flex justify-between gap-2">
           <Image
