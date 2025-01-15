@@ -31,7 +31,7 @@ const PostListItem = () => {
           repellendus tempora! Deleniti, beatae quam. Quam voluptatibus labore
           itaque laborum ab ducimus?
         </p>
-        <Link to={"/test"} className="text-blue-500">
+        <Link to={"/test"} className="text-sm text-blue-500 hover:underline">
           Read more
         </Link>
       </div>
