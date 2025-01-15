@@ -26,7 +26,9 @@ const Navbar = () => {
         {/* Mobile menu */}
         <div
           className={` w-full h-screen flex flex-col gap-6 font-medium text-xl items-center justify-center absolute top-16 ${
-            open ? "-right-0" : "-right-[100%]"
+            open
+              ? "-right-0 z-50 bg-[#e6e6ff] calc(100% - h-12) -mt-2"
+              : "-right-[100%] "
           } transition-all ease-in-out duration-300`}
         >
           {/* to give links after installing react router dom */}
